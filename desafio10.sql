@@ -1,4 +1,4 @@
-SELECT musica, COUNT(nome)
+SELECT musica as nome, COUNT(nome) as reproducoes
 FROM SpotifyClone.Reproducoes
 INNER JOIN SpotifyClone.Cancoes ON SpotifyClone.Cancoes.musica_id = SpotifyClone.Reproducoes.cancoes_musica_id
 INNER JOIN SpotifyClone.Usuario ON SpotifyClone.Usuario.usuario_id = SpotifyClone.Reproducoes.usuario_nome_id
