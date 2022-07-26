@@ -1,5 +1,5 @@
 SELECT nome as usuario,
-IF(MAX(YEAR(data_reproducao)) = 2021, "Usuario Ativo", "Usuario inativo") AS condicao_usuario
+IF(MAX(YEAR(data_reproducao)) = 2021, "Usuário ativo", "Usuário inativo") AS condicao_usuario
 from SpotifyClone.Usuario
 INNER JOIN SpotifyClone.Reproducoes ON SpotifyClone.Reproducoes.usuario_nome_id = SpotifyClone.Usuario.usuario_id
 WHERE YEAR(data_reproducao) <= 2021
